@@ -1,0 +1,152 @@
+﻿/*ページ全体の書式設定*/
+body { font-family: "メイリオ", "Meiryo", "ヒラギノ角ゴシック Pro", "Hiragino Kaku Gothic Pro", sans-serif; }
+p { font-size: 14px; }
+ul li { font-size: 14px; }
+/*<div id="page">の幅と余白*/
+#page {
+	width: 900px;
+	margin: 0 auto;
+}
+
+
+
+/* pageHeadのデザイン */
+#pageHead {
+	margin-bottom: 35px;
+}
+/* ページトップにナビゲーションを入れる */
+#pageHeadNavi {
+	border-top: solid 1px #909090;
+	border-bottom: solid 1px #909090;
+	margin-bottom: 10px;
+}
+#pageHeadNavi #navi ul {
+	margin-top: 5px;
+	margin-bottom: 5px;
+	padding: 0;
+}
+#pageHeadNavi #navi ul:after {
+	content: "";
+	clear: left;
+	display: block;
+}
+#pageHeadNavi #navi li {
+	list-style: none;
+	float: left;
+	width: 200px;
+	font-size: 18px;
+	color: #E262FF;
+	text-align: center;
+	border-left: solid 1px #909090;
+	padding: 0 11px;
+}
+#pageHeadNavi #navi li:first-child {
+	border-left: none;
+}
+#pageHeadNavi #navi a {
+	color: inherit;
+	text-decoration: none;
+	display: block; 
+	padding: 5px;
+}
+#pageHeadNavi #navi a:hover {
+	background-color: #F1B4FF;
+}
+
+
+
+/* pageBodyのデザイン */
+#pageBody {
+	margin-bottom: 35px;
+}
+.pageBodyColumn {
+	margin-bottom: 35px;
+}
+
+.pageBodyColumn:after {
+	content: "";
+	clear: left;
+	display: block;
+}
+.pageTopic {
+	margin-left: 15px;
+	width: 290px;
+	float: left;
+	color: #000000;
+}
+.pageTopic:hover {
+	color: #E262FF;
+}
+/* Columnの1列目だけ左余白を詰める */
+.pageTopicLeft {
+	margin-left: 0px;
+	width: 290px;
+	float: left;
+	color: #000000;
+}
+.pageTopicLeft:hover {
+	color: #E262FF;
+}
+
+
+
+/* pageFootのデザイン */
+#pageFoot {
+	margin-bottom: 35px;
+}
+#pageFoot ul li {
+	font-size: 15px;
+	list-style-type: square; 
+}
+
+
+
+/* 見出し */
+#pageHeadHeading {
+	font-size: 36px;
+	color: #E262FF;
+	margin-top: 20px;
+	margin-bottom: 10px;
+}
+.pageTopicHeading {
+	font-size: 18px; 
+	color: #E262FF;
+	border-bottom: solid 1px #E262FF;
+}
+#pageFootHeading {
+	font-size: 18px; 
+	color: #909090;
+	border-bottom: solid 1px #909090;
+}
+
+
+
+/* 表の書式 */
+table {
+	/* 文字サイズ */
+	font-size: 14px;
+	/* 罫線は1pxの実線で灰色 */
+	border: 1px solid #CCCCCC;
+	/* 罫線と罫線の隙間をなくす */
+	border-collapse: collapse; 
+	/* 表の幅をブラウザ画面に対して100%とる */
+	width: 100%;
+}
+table th {
+	border: 1px solid #CCCCCC;
+	padding: 5px 10px;
+	background-color: #EEEEEE;
+	text-align: center;
+}
+table td {
+	border: 1px solid #CCCCCC;
+	padding: 5px 10px;
+	text-align: left;
+}
+table caption {
+	/* 文字を左寄せ */
+	text-align: left;
+	/* 太字化（ボールドタイプ） */
+	font-weight: bold;
+}
+
